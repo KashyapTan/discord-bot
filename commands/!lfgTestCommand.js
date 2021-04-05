@@ -20,7 +20,7 @@ module.exports = {
 
         const text1 = new MessageEmbed()
         .setColor('3478ff')
-        .setDescription(`**Your lfg message has been created in** <#473881885416620042>`)
+        .setDescription(`**Your lfg message has been created in** <#703635033650495585>`)
 
         const filter = (m) => m.author.id === message.author.id
         const appStart = await message.author.send(questions[collectCounter++])
@@ -38,7 +38,7 @@ module.exports = {
             }
         })
 
-        const appsChannel = client.channels.cache.get('473881885416620042');
+        const appsChannel = client.channels.cache.get('703635033650495585');
         collector.on('end', (collected, reason) => {
             if (reason === 'Done') {
                 let index = 1
